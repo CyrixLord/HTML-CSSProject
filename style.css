@@ -1,0 +1,132 @@
+/*  
+
+COLOR CODES
+
+#00EAF5;	bright turquoise   rgba(0, 234, 245, .25);
+
+#01B6BE;		medium turquoise
+
+*/
+
+
+/* RESETS */
+body, body * {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;	/* declared width = rendered width */
+}
+
+/* GLOBAL TEXT STYLES */
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.6;
+	color: #000;
+}
+
+/* LAYOUT */
+
+.wrapper {
+	width: 96%;
+	max-width: 940px;
+	margin: 0 auto; 
+}
+
+/* HEADER */
+#header {
+	background-color: rgba(0, 234, 245, .9);	/* bright turquiose */
+	width: 100%;
+}
+
+
+/* MAIN CONTENT DIV WITH TWO NARROW SIDEBARS */
+
+#spotlight {
+	background-image: url(images/cliff.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;	
+	padding-top: 32.5%; 	/* target height / target width, to give us the bg-image's aspect ratio */
+}
+
+#middle {				/* width = 900px */
+	clear: both;
+	overflow: hidden;	
+	padding-top: 2em;
+}
+
+#main {		/* encloses #content and one sidebar */
+	width: 700px;	
+	float: right;
+}
+
+#content {
+	width: 460px;
+	float: left;	
+}
+
+#primary {
+	width: 220px; 	
+	float: left;
+}
+
+#secondary {
+	width: 220px; 	
+	float: right;	
+}
+
+#footer {
+	background: #00EAF5;	/* bright turquiose */
+	min-height: 60px;
+	padding: 1.25em 0;
+}
+
+/* MAIN CONTENT DIV WITH ONE WIDE SIDEBAR */
+
+
+.two-col #middle {
+	width: 70%;
+}
+
+.two-col #content {
+	float: right;
+}
+
+.two-col #secondary {
+	float: left;
+}
+
+
+/* MAIN NAV STYLES */
+
+#nav-main {
+	float: right;
+}
+
+#nav-main li {
+		list-style: none;
+		float: left;		/* float nav left, float list items right */
+}
+
+#nav-main a:link,
+#nav-main a:visited {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: .25em 1em;
+}
+
+#nav-main a:hover,
+#nav-main a:focus {
+	background-color: #000;
+	color: #FFF;
+}
+
+
+
+
+
